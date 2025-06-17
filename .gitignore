@@ -39,3 +39,24 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# .gitignore
+
+# Dependencies
+/node_modules
+
+# Next.js build output
+/.next/
+/out/
+
+# Drizzle migration output
+/drizzle/
+
+# Environment variables
+.env
+.env.local
+.env.production
+.env.development
+
+# VSCode settings
+.vscode
