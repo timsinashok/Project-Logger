@@ -36,7 +36,7 @@ export default async function HomePage() {
 
   if (!userData || !userData.company) {
     // This could happen if a user was deleted but their cookie remains
-    cookies().delete('userId');
+    (await cookies()).delete('userId'); // <--- THIS IS THE FIX
     redirect('/login');
   }
 
